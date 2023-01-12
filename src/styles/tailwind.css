@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("../../public/fonts/GraphikRegular.otf") format("otf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: "Italic";
+  src: url("../../public/fonts/GraphikRegularItalic.otf") format("otf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  min-height: 100%;
+}

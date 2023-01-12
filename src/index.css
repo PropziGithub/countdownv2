@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-shadow{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+}
+
+.input-shadow{
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tab-shadow{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.desktop_tab-shadow{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title{
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.counter-shadow{
+    box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25);
+}
