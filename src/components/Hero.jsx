@@ -164,8 +164,8 @@ const Mobile = () => {
   return (
     <div className="relative flex flex-col justify-center items-center mx-auto">
       <div className="flex justify-center items-center">
-        <div className="bg-[#094E10] text-center py-20 rounded-b-[10px] desktop_tab-shadow">
-          <span className="title text-[#FFFFFF] text-[48px] leading-[57.6px] font-Bebas_Neue">
+        <div className="text-center py-20">
+          <span className="title text-[#FFFFFF] text-[48px] leading-[57.6px] font-Montserrat">
             Attention all pizza and hockey lovers
           </span>
         </div>
@@ -177,7 +177,7 @@ const Mobile = () => {
             key={index}
           >
             <div className="counter-shadow bg-[#FFFFFF] p-4 w-[69px] h-[80px] text-center rounded-[6px] flex-none">
-              <span className="text-[#830101]  font-Montserrat font-semibold text-3xl">
+              <span className="text-[#094E10]  font-Montserrat font-semibold text-3xl">
                 {item?.inter}
               </span>
             </div>
@@ -205,8 +205,8 @@ const Mobile = () => {
 const Desktop = () => {
   return (
     <div className="my-auto grid grid-cols-1 gap-y-10 lg:grid-cols-2">
-      <div className="p-20  flex flex-col justify-center items-center">
-        <p className="title text-[#FFFFFF] text-[64px] leading-[77px] font-Bebas_Neue">
+      <div className="p-20  flex flex-col justify-center items-center text-center">
+        <p className="title text-[#FFFFFF] text-[64px] leading-[77px] font-Montserrat">
           Attention all pizza and hockey lovers
         </p>
         <p className="py-[19px] text-[#FFFFFF] text-[26px] leading-[31.2px] font-Montserrat">
