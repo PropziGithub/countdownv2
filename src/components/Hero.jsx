@@ -166,7 +166,7 @@ const Mobile = () => {
       <div className="flex justify-center items-center">
         <div className="text-center py-20">
           <span className="title text-[#FFFFFF] text-[48px] leading-[57.6px] font-Montserrat">
-            Attention all pizza and hockey lovers
+            Attention All Pizza and Hockey Lovers
           </span>
         </div>
       </div>
@@ -207,7 +207,7 @@ const Desktop = () => {
     <div className="my-auto grid grid-cols-1 gap-y-10 lg:grid-cols-2">
       <div className="p-20  flex flex-col justify-center items-center text-center">
         <p className="title text-[#FFFFFF] text-[64px] leading-[77px] font-Montserrat">
-          Attention all pizza and hockey lovers
+          Attention All Pizza and Hockey Lovers
         </p>
         <p className="py-[19px] text-[#FFFFFF] text-[26px] leading-[31.2px] font-Montserrat">
           Topper's Pizza is proud to introduce our Toronto Maple Leafs Giveaway!

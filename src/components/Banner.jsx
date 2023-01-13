@@ -17,10 +17,10 @@ const Banner = () => {
               Canadiens on Saturday, April 8th.
             </strong>
           </p>
-          <p className="text-[20px] leading-[30.64px] font-Montserrat text-center pb-4">
+          {/* <p className="text-[20px] leading-[30.64px] font-Montserrat text-center pb-4">
             Don't miss out on this amazing opportunity to see the Leafs in
             action.
-          </p>
+          </p> */}
           <p className="text-[20px] leading-[30.64px] font-Montserrat text-center pb-4">
             Don't miss out on this amazing opportunity to see the Leafs in
             action before the contest closes at{" "}
@@ -35,7 +35,7 @@ const Banner = () => {
               href="http://toppers.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-shadow bg-[#AA0000] text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-[25px] py-[10px] text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2"
+              className="btn-shadow uppercase bg-[#AA0000] text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-[25px] py-[10px] text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2"
             >
               order now
             </a>
