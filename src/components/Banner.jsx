@@ -1,15 +1,14 @@
 import React from "react";
-import Container from "@/components/Container";
 import pizza from "@/images/pizza.svg";
 
 const Banner = () => {
   return (
-    <section className="bg-[#094E10]">
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:p-[54px] p-[20px]">
-        <div className=" h-full w-full">
+    <section >
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:px-[54px] lg:pt-[84px] p-[20px]">
+        <div className="h-full w-full">
           <img src={pizza} alt="pizza" className="h-full w-full" />
         </div>
-        <div className="bg-[#FFFFFF] flex flex-col px-[36px] py-[44px] ">
+        <div className="bg-[#FFFFFFD9] flex flex-col px-[36px] py-[44px] ">
           <p className="text-[20px] leading-[30.64px] font-Graphik text-center pb-4">
             All you have to do is order one of our delicious Bacon Grilled
             Cheese pizzas to enter for a chance to win{" "}

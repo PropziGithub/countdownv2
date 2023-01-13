@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "@/components/Container";
+import Banner from "@/components/Banner";
 
 const Button = () => {
   return (
@@ -200,7 +201,7 @@ const Mobile = () => {
 const Desktop = () => {
   return (
     <div className="my-auto grid grid-cols-1 gap-y-10 lg:grid-cols-2">
-      <div className=" w-[600px] p-20 rounded-r-[50px] bg-[#094E10] desktop_tab-shadow flex flex-col justify-center items-center">
+      <div className="p-20  flex flex-col justify-center items-center">
         <p className="title text-[#FFFFFF] text-[64px] leading-[77px] font-Bebas_Neue">
           Attention all pizza and hockey lovers
         </p>
@@ -221,15 +222,16 @@ const Desktop = () => {
 const Hero = () => {
   return (
     <section
-      className={`bg-[url('images/hero.svg')] w-[100%] h-[100%] bg-no-repeat bg-cover`}
+      className={`bg-[url('images/hero_bg.jpg')] w-[100%] h-[100%] bg-no-repeat bg-cover`}
     >
-      <div className="bg-[#013F7DD6] w-[100%] h-[100%] pb-10 sm:py-[84px]">
+      <div className="bg-[#013F7D8C] w-[100%] h-[100%] pb-10 sm:pt-[84px]">
         <Container className="md:hidden">
           <Mobile />
         </Container>
-        <div className="hidden  md:block">
+        <Container className="hidden  md:block">
           <Desktop />
-        </div>
+        </Container>
+        <Banner />
       </div>
     </section>
   );

@@ -6,7 +6,6 @@ import Contact from "@/components/Contact";
 import Socials from "@/components/Socials";
 import Choosing from "@/components/Choosing";
 import Footer from "@/components/Footer";
-import Banner from '@/components/Banner';
 
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Header/>
       <main>
         <Hero />
-        <Banner/>
         <Contact />
         <Socials />
         <Choosing />
