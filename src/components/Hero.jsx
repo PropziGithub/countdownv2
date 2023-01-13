@@ -6,7 +6,7 @@ const Button = () => {
   return (
     <button
       type="submit"
-      className="btn-shadow bg-[#AA0000] text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-[25px] py-[10px] text-[18px] leading-[27.57px] font-Sans outline-2 outline-offset-2"
+      className="btn-shadow bg-[#AA0000] text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-[25px] py-[10px] text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2"
     >
       ENTER THE CONTEST
     </button>
@@ -85,11 +85,13 @@ const TimeDisplay = () => {
             key={index}
           >
             <div className="counter-shadow bg-[#FFFFFF] p-4 w-[100px] h-[80px] text-center rounded-[6px] flex-none">
-              <span className="text-[#094E10] font-semibold text-3xl">
+              <span className="text-[#094E10] font-Montserrat font-semibold text-3xl">
                 {item?.inter}
               </span>
             </div>
-            <span className="text-xs py-2 text-[#FFFFFF] font-Sans">{item?.name}</span>
+            <span className="text-xs py-2 text-[#FFFFFF] font-Montserrat">
+              {item?.name}
+            </span>
           </div>
         ))}
       </div>
@@ -175,17 +177,19 @@ const Mobile = () => {
             key={index}
           >
             <div className="counter-shadow bg-[#FFFFFF] p-4 w-[69px] h-[80px] text-center rounded-[6px] flex-none">
-              <span className="text-[#830101] font-semibold text-3xl">
+              <span className="text-[#830101]  font-Montserrat font-semibold text-3xl">
                 {item?.inter}
               </span>
             </div>
-            <span className="text-xs py-2 text-[#FFFFFF] font-Sans">{item?.name}</span>
+            <span className="text-xs py-2 text-[#FFFFFF] font-Montserrat">
+              {item?.name}
+            </span>
           </div>
         ))}
       </div>
       <div className="flex flex-col justify-center items-center text-center pt-[85px] pb-8 px-5">
         <div>
-          <p className="py-[19px] text-[#FFFFFF] text-[24px] leading-[28.8px] font-Graphik">
+          <p className="py-[19px] text-[#FFFFFF] text-[24px] leading-[28.8px] font-Montserrat">
             Topper's Pizza is proud to introduce our Toronto Maple Leafs
             Giveaway!
           </p>
@@ -205,7 +209,7 @@ const Desktop = () => {
         <p className="title text-[#FFFFFF] text-[64px] leading-[77px] font-Bebas_Neue">
           Attention all pizza and hockey lovers
         </p>
-        <p className="py-[19px] text-[#FFFFFF] text-[26px] leading-[31.2px] font-Graphik">
+        <p className="py-[19px] text-[#FFFFFF] text-[26px] leading-[31.2px] font-Montserrat">
           Topper's Pizza is proud to introduce our Toronto Maple Leafs Giveaway!
         </p>
         <span>

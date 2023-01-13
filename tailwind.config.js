@@ -37,11 +37,8 @@ module.exports = {
         gray: colors.neutral,
       }),
       fontFamily: {
-        Graphik: ["Graphik", ...defaultTheme.fontFamily.sans],
-        Sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
         Bebas_Neue: ["Bebas Neue", ...defaultTheme.fontFamily.sans],
-        Noe: ["Notable", ...defaultTheme.fontFamily.sans],
-        Libre: ["David Libre", ...defaultTheme.fontFamily.sans],
+        Montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         "fade-in": {

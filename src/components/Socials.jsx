@@ -113,7 +113,7 @@ const Socials = () => {
                 </a>
               ))}
             </div>
-            <span className="text-[#000000] font-Graphik text-sm  py-2 lg:lg-0 text-center">
+            <span className="text-[#000000] font-Montserrat text-sm  py-2 lg:lg-0 text-center">
             You can also follow us on social media for the latest updates.
             </span>
           </div>

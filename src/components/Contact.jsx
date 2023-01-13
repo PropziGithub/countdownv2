@@ -5,7 +5,7 @@ const Button = () => {
   return (
     <button
       type="submit"
-      className="btn-shadow bg-[#AA0000] text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-10 text-[18px] leading-[27.57px] font-Sans outline-2 outline-offset-2  py-1 "
+      className="btn-shadow bg-[#AA0000] text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-10 text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2  py-1 "
     >
       SUBMIT
     </button>
@@ -14,7 +14,7 @@ const Button = () => {
 
 const Input = ({ id, label, type = "text", className, ...props }) => {
   const formClass =
-    "input-shadow block w-full appearance-none rounded-[10px] border  bg-white py-1 px-2 text-gray-900 placeholder:text-gray-400 focus:border-cyan-500 focus:outline-none focus:ring-cyan-500 text-[18px] leading-[27.57px] font-Sans ";
+    "input-shadow block w-full appearance-none rounded-[10px] border  bg-white py-1 px-2 text-gray-900 placeholder:text-gray-400 focus:border-cyan-500 focus:outline-none focus:ring-cyan-500 text-[18px] leading-[27.57px] font-Montserrat";
   return (
     <div className={className}>
       <input type={type} id={id} {...props} className={formClass} />
@@ -27,7 +27,7 @@ const Contact = () => {
     <section className="pt-10 sm:pt-20 ">
       <Container>
         <div className="mx-auto max-w-2xl text-center mb-4">
-          <span className="font-Graphik text-[20px] leading-[30.64px] tracking-tight text-gray-900">
+          <span className="font-Montserrat text-[20px] leading-[30.64px] tracking-tight text-gray-900">
             So don't wait! Get your hands on a Bacon Grilled Cheese pizza and
             enter for a chance to cheer on the Leafs in person.
           </span>
