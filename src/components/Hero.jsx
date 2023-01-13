@@ -89,7 +89,7 @@ const TimeDisplay = () => {
                 {item?.inter}
               </span>
             </div>
-            <span className="text-xs py-2 text-[#FFFFFF]">{item?.name}</span>
+            <span className="text-xs py-2 text-[#FFFFFF] font-Sans">{item?.name}</span>
           </div>
         ))}
       </div>
@@ -179,7 +179,7 @@ const Mobile = () => {
                 {item?.inter}
               </span>
             </div>
-            <span className="text-xs py-2 text-[#FFFFFF]">{item?.name}</span>
+            <span className="text-xs py-2 text-[#FFFFFF] font-Sans">{item?.name}</span>
           </div>
         ))}
       </div>
