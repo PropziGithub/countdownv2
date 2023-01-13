@@ -206,7 +206,7 @@ const Desktop = () => {
   return (
     <div className="my-auto grid grid-cols-1 gap-y-10 lg:grid-cols-2">
       <div className="p-20  flex flex-col justify-center items-center text-center">
-        <p className="title text-[#FFFFFF] text-[64px] leading-[77px] font-Montserrat">
+        <p className="title text-[#FFFFFF] text-[56px] leading-[77px] font-Montserrat">
           Attention All Pizza and Hockey Lovers
         </p>
         <p className="py-[19px] text-[#FFFFFF] text-[26px] leading-[31.2px] font-Montserrat">
