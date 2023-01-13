@@ -6,7 +6,7 @@ const Button = () => {
   return (
     <button
       type="submit"
-      className="btn-shadow bg-[#AA0000] text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-[25px] py-[10px] text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2"
+      className="btn-shadow bg-[#AA0000] hover:bg-[#094E10] duration-500 ease-in-out text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-[25px] py-[10px] text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2"
     >
       ENTER THE CONTEST
     </button>
@@ -85,7 +85,7 @@ const TimeDisplay = () => {
             key={index}
           >
             <div className="counter-shadow bg-[#FFFFFF] p-4 w-[100px] h-[80px] text-center rounded-[6px] flex-none">
-              <span className="text-[#094E10] font-Montserrat font-semibold text-3xl">
+              <span className="text-[#094E10] font-Montserrat font-semibold text-5xl">
                 {item?.inter}
               </span>
             </div>
@@ -162,22 +162,22 @@ const Mobile = () => {
     },
   ];
   return (
-    <div className="relative flex flex-col justify-center items-center mx-auto">
+    <div className="flex flex-col justify-center items-center mx-auto">
       <div className="flex justify-center items-center">
-        <div className="text-center py-20">
-          <span className="title text-[#FFFFFF] text-[48px] leading-[57.6px] font-Montserrat">
+        <div className="text-center pt-20 pb-6">
+          <span className="text-[#FFFFFF] text-[47px] leading-[57.6px] font-Montserrat">
             Attention All Pizza and Hockey Lovers
           </span>
         </div>
       </div>
-      <div className="flex justify-between w-full absolute mt-8  top-1/9 left-1/2 -translate-x-1/2 -translate-y-1/9">
+      <div className="flex justify-between w-full mx-auto">
         {data.map((item, index) => (
           <div
             className="flex flex-col justify-center items-center"
             key={index}
           >
-            <div className="counter-shadow bg-[#FFFFFF] p-4 w-[69px] h-[80px] text-center rounded-[6px] flex-none">
-              <span className="text-[#094E10]  font-Montserrat font-semibold text-3xl">
+            <div className="counter-shadow bg-[#FFFFFF] p-4 w-[69px] h-[80px] flex justify-center items-center text-center rounded-[6px] flex-none">
+              <span className="text-[#094E10]  font-Montserrat font-semibold text-4xl">
                 {item?.inter}
               </span>
             </div>
@@ -187,7 +187,10 @@ const Mobile = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col justify-center items-center text-center pt-[85px] pb-8 px-5">
+      <div className="flex flex-col justify-center items-center text-center py-8 px-5">
+      <span className="py-2 text-[#FFFFFF] text-[16px] leading-[24px] text-center font-Montserrat">
+          Contest ends at 11:00 p.m. on Tuesday, March 21, 2023
+        </span>
         <div>
           <p className="py-[19px] text-[#FFFFFF] text-[24px] leading-[28.8px] font-Montserrat">
             Topper's Pizza is proud to introduce our Toronto Maple Leafs
@@ -205,8 +208,8 @@ const Mobile = () => {
 const Desktop = () => {
   return (
     <div className="my-auto grid grid-cols-1 gap-y-10 lg:grid-cols-2">
-      <div className="p-20  flex flex-col justify-center items-center text-center">
-        <p className="title text-[#FFFFFF] text-[56px] leading-[77px] font-Montserrat">
+      <div className="px-10 py-20 flex flex-col justify-center items-center text-center">
+        <p className="text-[#FFFFFF] text-[56px] leading-[77px] font-Montserrat">
           Attention All Pizza and Hockey Lovers
         </p>
         <p className="py-[19px] text-[#FFFFFF] text-[26px] leading-[31.2px] font-Montserrat">
@@ -216,8 +219,11 @@ const Desktop = () => {
           <Button />
         </span>
       </div>
-      <div className="m-auto">
+      <div className="m-auto flex flex-col">
         <TimeDisplay />
+        <span className="py-2 text-[#FFFFFF] text-[16px] leading-[24px] text-center font-Montserrat">
+          Contest ends at 11:00 p.m. on Tuesday, March 21, 2023
+        </span>
       </div>
     </div>
   );

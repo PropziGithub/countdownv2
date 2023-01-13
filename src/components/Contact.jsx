@@ -5,7 +5,7 @@ const Button = () => {
   return (
     <button
       type="submit"
-      className="btn-shadow bg-[#AA0000] text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-10 text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2  py-1 "
+      className="btn-shadow bg-[#AA0000] hover:bg-[#094E10] duration-500 ease-in-out text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-10 text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2  py-1 "
     >
       SUBMIT
     </button>
