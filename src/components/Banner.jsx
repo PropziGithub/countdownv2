@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="w-[100%] h-[100%]">
           <img src={pizza} alt="pizza" className="h-[100%] w-[100%]" />
         </div>
-        <div className="bg-[#FFFFFFD9] flex flex-col px-[36px] py-[44px] ">
+        <div className="bg-[#FFFFFFD9] flex flex-col px-[36px] py-[44px] lg:justify-center lg:items-center ">
           <p className="text-[20px] leading-[30.64px] font-Montserrat text-center pb-4">
             Order one of our delicious Bacon Grilled
             Cheese pizzas to enter for a chance to win{" "}
