@@ -164,7 +164,8 @@ const Mobile = () => {
   return (
     <div className="flex flex-col justify-center items-center mx-auto">
       <div className="flex justify-center items-center">
-        <div className="text-center pt-20 pb-6">
+        <div className="text-center pt-20 pb-6 flex flex-col justify-center items-center">
+          <img src="/olymel.png" alt="" className="h-32 w-32" />
           <span className="text-[#FFFFFF] text-[47px] leading-[57.6px] font-Montserrat">
             Attention All Pizza and Hockey Lovers
           </span>
@@ -210,6 +211,7 @@ const Desktop = () => {
   return (
     <div className="my-auto grid grid-cols-1 gap-y-10 lg:grid-cols-2">
       <div className="px-10 py-20 flex flex-col justify-center items-center text-center">
+        <img src="/olymel.png" alt="" className="h-48 w-48" />
         <p className="text-[#FFFFFF] text-[56px] leading-[77px] font-Montserrat">
           Attention All Pizza and Hockey Lovers
         </p>
@@ -223,7 +225,7 @@ const Desktop = () => {
       <div className="m-auto flex flex-col">
         <TimeDisplay />
         <span className="py-2 text-[#FFFFFF] text-[16px] leading-[24px] text-center font-Montserrat">
-        Contest ends{" "}
+          Contest ends{" "}
           <strong>at 11:00 p.m. on Tuesday, March 21, 2023.</strong>
         </span>
       </div>
