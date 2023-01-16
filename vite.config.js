@@ -10,10 +10,7 @@ export default defineConfig({
   build: {
     // generate manifest.json in outDir
     manifest: true,
-    rollupOptions: {
-      // overwrite default .html entry
-      input: path.resolve(__dirname, 'index.html')
-    }
+    outDir: 'topperscontest.ca'
   },
   plugins: [react()],
 })
