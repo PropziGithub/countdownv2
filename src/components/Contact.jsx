@@ -24,6 +24,7 @@ const Input = ({ id, label, type = "text", className, ...props }) => {
 
 const Contact = () => {
   const [formData, setFormData] = useState({});
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -37,9 +38,10 @@ const Contact = () => {
       });
       await response.text();
       setFormData({});
-      event.target.reset();
+      setSuccess(true);
     } catch (error) {
       event.target.reset();
+      setSuccess(false);
     }
   };
 
@@ -47,6 +49,14 @@ const Contact = () => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setSuccess(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, [success]);
 
   return (
     <section className="pt-10 sm:pt-20 ">
@@ -57,9 +67,16 @@ const Contact = () => {
             for a chance to cheer the Leafs on in person.
           </span>
         </div>
+        {success && (
+          <div className="mx-auto max-w-2xl text-center mb-4 p-5 rounded-xl bg-green-700">
+            <span className="font-Montserrat text-[20px] leading-[30.64px] tracking-tight text-white ">
+              Thank you for your submission!
+            </span>
+          </div>
+        )}
         <div className="tab-shadow mx-auto max-w-3xl rounded-[10px] shadow-md bg-[#013F7D] px-4 py-4">
           <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <Input
                 onChange={handleChange}
                 value={formData.firstName || ""}
@@ -82,6 +99,7 @@ const Contact = () => {
                 required
                 className="lg:w-80 min-w-0 shrink"
               />
+
               <Input
                 onChange={handleChange}
                 value={formData.email || ""}
@@ -105,6 +123,13 @@ const Contact = () => {
                 className="lg:w-80 min-w-0 shrink"
               />
             </div>
+            <label htmlFor="" className="flex gap-4 mt-5 text-white">
+              <input type="checkbox" className="self-start" required />
+              <span className="block mt-[-5px] text-[14px] md:text-[16px]">
+                Send me updates from Topper's Pizza with delicious offers, new
+                product alerts and event invites.
+              </span>
+            </label>
 
             <div className="flex justify-center items-center pt-6">
               <Button />

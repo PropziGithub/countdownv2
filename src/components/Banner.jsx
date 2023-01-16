@@ -1,5 +1,6 @@
 import React from "react";
 import pizza from "@/images/pizza.png";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -8,21 +9,21 @@ const Banner = () => {
         <div className="w-[100%] h-[100%]">
           <img src={pizza} alt="pizza" className="h-[100%] w-[100%]" />
         </div>
-        <div className="bg-[#FFFFFFD9] flex flex-col px-[36px] py-[44px] lg:justify-center lg:items-center ">
-          <p className="text-[20px] leading-[30.64px] font-Montserrat text-center pb-4">
-            Order one of our delicious Bacon Grilled
-            Cheese pizzas to enter for a chance to win{" "}
+        <div className="bg-[#FFFFFFD9] flex flex-col px-[36px] text-[16px] py-[44px] lg:justify-center lg:items-center ">
+          <p className="leading-[30.64px] font-Montserrat text-center pb-4">
+            Order one of our delicious Bacon Grilled Cheese pizzas to enter for
+            a chance to win{" "}
             <strong>
               4 Toronto Maple Leaf tickets to see them take on the Montreal
               Canadiens on Saturday, April 8th.
             </strong>
           </p>
-          <p className="text-[20px] leading-[30.64px] font-Montserrat text-center pb-4">
+          <p className="leading-[30.64px] font-Montserrat text-center pb-4">
             Don't miss out on this amazing opportunity to see the Leafs in
             action before the contest closes at{" "}
             <strong>11:00 p.m. on Tuesday, March 21, 2023.</strong>
           </p>
-          <p className="text-[20px] leading-[30.64px] font-Montserrat text-center pb-4">
+          <p className="leading-[30.64px] font-Montserrat text-center pb-4">
             The draw will occur on <strong>Wednesday, March 22, 2023</strong>,
             and the winner will be notified.
           </p>
@@ -36,6 +37,16 @@ const Banner = () => {
               order now
             </a>
           </div>
+          <p className="text-[10px] text-center mt-7">
+            Order a Bacon Grilled Cheese pizza and scan to enter for a chance to
+            win a set of 4 Toronto Maple Leaf tickets. Game day is Saturday,
+            April 8th vs.the Montreal Canadiens. Contest closes 11:00p.m. on
+            Tuesday, March 21, 2023. Draw to occur and winner notified on
+            Wednesday, March 22, 2023. No purchase necessary.
+            <Link to={"/rules"} className="font-bold">
+              See the full rules here.
+            </Link>
+          </p>
         </div>
       </div>
     </section>

@@ -22,3 +22,7 @@
 #__next {
   min-height: 100%;
 }
+
+.style-p > p {
+  @apply my-5;
+}
