@@ -165,7 +165,7 @@ const Mobile = () => {
     <div className="flex flex-col justify-center items-center mx-auto">
       <div className="flex justify-center items-center">
         <div className="text-center pt-20 pb-6 flex flex-col justify-center items-center">
-          <div className="flex items-center font-bold text-white">
+          <div className="flex items-center text-white">
             <p className="w-[70%]">This contest is brought to you by</p>
             <img src="/olymel.png" alt="" className="h-20 w-20" />
           </div>
@@ -214,7 +214,7 @@ const Desktop = () => {
   return (
     <div className="my-auto grid grid-cols-1 gap-y-10 lg:grid-cols-2">
       <div className="px-10 py-20 flex flex-col justify-center items-center text-center">
-        <div className="flex items-center font-bold text-white">
+        <div className="flex items-center text-white">
           <p>This contest is brought to you by</p>
           <img src="/olymel.png" alt="" className="h-32 w-32" />
         </div>
