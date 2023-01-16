@@ -24,20 +24,23 @@ const Input = ({ id, label, type = "text", className, ...props }) => {
 
 const Contact = () => {
   const [formData, setFormData] = useState({});
-  console.log("Form data :", formData);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    fetch("https://auto.topperscontest.ca", {
-      method: "POST",
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setFormData({});
-      })
-      .catch((error) => console.error(error));
+    try {
+      const response = await fetch("https://auto.topperscontest.ca", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      await response.text();
+      setFormData({});
+      event.target.reset();
+    } catch (error) {
+      event.target.reset();
+    }
   };
 
   const handleChange = (event) => {
