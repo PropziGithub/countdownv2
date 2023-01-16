@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "@/components/Container";
 
 const Button = () => {
   return (
     <button
       type="submit"
-      className="btn-shadow bg-[#AA0000] hover:bg-[#094E10] duration-500 ease-in-out text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-10 text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2  py-1 "
+      className="btn-shadow bg-[#AA0000] hover:bg-[#094E10] duration-500 ease-in-out text-[#FFFFFF] inline-flex justify-center rounded-[10px] px-10 text-[18px] leading-[27.57px] font-Montserrat outline-2 outline-offset-2 lg:w-[300px] w-full  py-1"
     >
       SUBMIT
     </button>
@@ -23,34 +23,89 @@ const Input = ({ id, label, type = "text", className, ...props }) => {
 };
 
 const Contact = () => {
+  const [formData, setFormData] = useState({});
+  console.log("Form data :", formData);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch("https://auto.topperscontest.ca", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setFormData({});
+      })
+      .catch((error) => console.error(error));
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
   return (
     <section className="pt-10 sm:pt-20 ">
       <Container>
         <div className="mx-auto max-w-2xl text-center mb-4">
           <span className="font-Montserrat text-[20px] leading-[30.64px] tracking-tight text-gray-900">
-            So don't wait! Get your hands on a Bacon Grilled Cheese pizza and
-            enter for a chance to cheer on the Leafs in person.
+            Don't wait! Get your hands on a Bacon Grilled Cheese pizza and enter
+            for a chance to cheer the Leafs on in person.
           </span>
         </div>
         <div className="tab-shadow mx-auto max-w-3xl rounded-[10px] shadow-md bg-[#013F7D] px-4 py-4">
-          <form className="flex flex-col justify-center items-center lg:flex-row gap-y-4 md:w-auto lg:space-x-2">
-            <Input
-              type="text"
-              aria-label="name"
-              placeholder="Name"
-              autoComplete="name"
-              required
-              className="lg:w-80 min-w-0 shrink"
-            />
-            <Input
-              type="email"
-              aria-label="Email"
-              placeholder="Email address"
-              autoComplete="email"
-              required
-              className="lg:w-80 min-w-0 shrink"
-            />
-            <Button />
+          <form onSubmit={handleSubmit}>
+            <div className="grid grid-cols-2 gap-6">
+              <Input
+                onChange={handleChange}
+                value={formData.firstName || ""}
+                type="text"
+                aria-label="name"
+                placeholder="First name"
+                autoComplete="name"
+                name="firstName"
+                required
+                className="lg:w-80 min-w-0 shrink"
+              />
+              <Input
+                onChange={handleChange}
+                value={formData.lastName || ""}
+                type="text"
+                aria-label="name"
+                placeholder="Last name"
+                autoComplete="name"
+                name="lastName"
+                required
+                className="lg:w-80 min-w-0 shrink"
+              />
+              <Input
+                onChange={handleChange}
+                value={formData.email || ""}
+                type="email"
+                aria-label="Email"
+                placeholder="Email address"
+                autoComplete="email"
+                name="email"
+                required
+                className="lg:w-80 min-w-0 shrink"
+              />
+              <Input
+                onChange={handleChange}
+                value={formData.orderNumber || ""}
+                type="text"
+                aria-label="orderNumber"
+                placeholder="Order number"
+                autoComplete="orderNumber"
+                name="orderNumber"
+                required
+                className="lg:w-80 min-w-0 shrink"
+              />
+            </div>
+
+            <div className="flex justify-center items-center pt-6">
+              <Button />
+            </div>
           </form>
         </div>
       </Container>

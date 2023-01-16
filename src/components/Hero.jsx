@@ -188,11 +188,12 @@ const Mobile = () => {
         ))}
       </div>
       <div className="flex flex-col justify-center items-center text-center py-8 px-5">
-      <span className="py-2 text-[#FFFFFF] text-[16px] leading-[24px] text-center font-Montserrat">
-          Contest ends at 11:00 p.m. on Tuesday, March 21, 2023
+        <span className="py-2 text-[#FFFFFF] text-[16px] leading-[24px] text-center font-Montserrat">
+          Contest ends{" "}
+          <strong>at 11:00 p.m. on Tuesday, March 21, 2023.</strong>
         </span>
         <div>
-          <p className="py-[19px] text-[#FFFFFF] text-[24px] leading-[28.8px] font-Montserrat">
+          <p className="py-[19px] text-[#FFFFFF] text-[24px] leading-[24px] font-Montserrat">
             Topper's Pizza is proud to introduce our Toronto Maple Leafs
             Giveaway!
           </p>
@@ -212,7 +213,7 @@ const Desktop = () => {
         <p className="text-[#FFFFFF] text-[56px] leading-[77px] font-Montserrat">
           Attention All Pizza and Hockey Lovers
         </p>
-        <p className="py-[19px] text-[#FFFFFF] text-[26px] leading-[31.2px] font-Montserrat">
+        <p className="py-[19px] text-[#FFFFFF] text-[26px] leading-[25px] font-Montserrat">
           Topper's Pizza is proud to introduce our Toronto Maple Leafs Giveaway!
         </p>
         <span>
@@ -222,7 +223,8 @@ const Desktop = () => {
       <div className="m-auto flex flex-col">
         <TimeDisplay />
         <span className="py-2 text-[#FFFFFF] text-[16px] leading-[24px] text-center font-Montserrat">
-          Contest ends at 11:00 p.m. on Tuesday, March 21, 2023
+        Contest ends{" "}
+          <strong>at 11:00 p.m. on Tuesday, March 21, 2023.</strong>
         </span>
       </div>
     </div>
