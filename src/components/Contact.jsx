@@ -75,7 +75,7 @@ const Contact = () => {
           </div>
         )}
         <div className="tab-shadow mx-auto max-w-3xl rounded-[10px] shadow-md bg-[#013F7D] px-4 py-4">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className='lg:flex flex-col justify-center items-center'>
             <div className="grid md:grid-cols-2 gap-6">
               <Input
                 onChange={handleChange}
@@ -123,7 +123,7 @@ const Contact = () => {
                 className="lg:w-80 min-w-0 shrink"
               />
             </div>
-            <label htmlFor="" className="flex gap-4 mt-5 text-white">
+            <label htmlFor="" className="flex gap-4 mt-5 text-white lg:mx-6">
               <input type="checkbox" className="self-start" required />
               <span className="block mt-[-5px] text-[14px] md:text-[16px]">
                 Send me updates from Topper's Pizza with delicious offers, new
