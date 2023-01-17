@@ -59,7 +59,7 @@ const Contact = () => {
   }, [success]);
 
   return (
-    <section className="pt-10 sm:pt-20 ">
+    <section className="pt-10 sm:pt-20 " id="enter">
       <Container>
         <div className="mx-auto max-w-2xl text-center mb-4">
           <span className="font-Montserrat text-[20px] leading-[30.64px] tracking-tight text-gray-900">
@@ -75,7 +75,10 @@ const Contact = () => {
           </div>
         )}
         <div className="tab-shadow mx-auto max-w-3xl rounded-[10px] shadow-md bg-[#013F7D] px-4 py-4">
-          <form onSubmit={handleSubmit} className='lg:flex flex-col justify-center items-center'>
+          <form
+            onSubmit={handleSubmit}
+            className="lg:flex flex-col justify-center items-center"
+          >
             <div className="grid md:grid-cols-2 gap-6">
               <Input
                 onChange={handleChange}
