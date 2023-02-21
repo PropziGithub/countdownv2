@@ -119,7 +119,6 @@ const Contact = () => {
                 placeholder="Order number"
                 autoComplete="orderNumber"
                 name="orderNumber"
-                required
                 className="lg:w-80 min-w-0 shrink"
               />
             </div>
