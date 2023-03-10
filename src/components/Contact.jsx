@@ -126,7 +126,7 @@ const Contact = () => {
               />
             </div>
             <label htmlFor="" className="flex gap-4 mt-5 text-white lg:mx-6">
-              <input type="checkbox" className="self-start" required />
+              <input type="checkbox" className="self-start"/>
               <span className="block mt-[-5px] text-[14px] md:text-[16px]">
                 Send me updates from Topper's Pizza with delicious offers, new
                 product alerts and event invites.
